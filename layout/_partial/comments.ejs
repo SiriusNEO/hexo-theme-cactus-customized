@@ -12,3 +12,8 @@
         </div>
     </div>
 <% } %>
+<% if(page.comments && theme.valine.enable){ %>
+    <div class="blog-post-comments">
+        <div class="vcomment"></div>
+    </div>
+<% } %>

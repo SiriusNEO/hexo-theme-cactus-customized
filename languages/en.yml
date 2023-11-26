@@ -1,7 +1,7 @@
 nav:
   home: Home
   about: About
-  articles: Writing
+  articles: Articles
   tag: Tag
   category: Category
   projects: Projects
@@ -15,11 +15,13 @@ footer:
   copyright: Copyright
 
 index:
-  find_me_on: Find me on
+  find_me_on: 'Reach me: '
   enum_comma: ','
   enum_and: and
-  articles: Writing
+  articles: Recent Articles
   projects: Projects
+  pinned: Pinned
+  categories: Categories
   topics: Topics
   most_recent: Most recent
 

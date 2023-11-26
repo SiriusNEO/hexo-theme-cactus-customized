@@ -5,7 +5,7 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
-projects_url: http://github.com/probberechts
+# projects_url: http://github.com/probberechts
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
 direction: ltr
@@ -17,36 +17,26 @@ nav:
   home: /
   about: /about/
   articles: /archives/
-  projects: http://github.com/probberechts
+  Links: /links/
+  Personal Page: https://siriusneo.top
 
 
 # Links to your social media accounts.
 # The 'icon' keys should correspond to Fontawesome icon names
 # (see https://fontawesome.com/icons?d=gallery&s=brands);
 # only 'mail' is an exception.
-# You can optionally add a 'label' key to set the title attribute on the link. 
+# You can optionally add a 'label' key to set the title attribute on the link.
 # 'icon' value will be used as title when 'label' is missing.
 social_links:
   -
     icon: github
-    link: http://github.com/probberechts/cactus-dark
+    link: https://github.com/SiriusNEO
   -
     icon: twitter
-    link: /
-  -
-    icon: facebook
-    link: /
+    link: https://twitter.com/siriusneox
   -
     icon: mail
-    link: mailto:name@email.com
-  -
-    icon: mastodon
-    label: mastodon.social
-    link: https://mastodon.social/@alice
-  -
-    icon: mastodon
-    label: fosstodon.org
-    link: https://fosstodon.org/@alice
+    link: mailto:siriusneo@sjtu.edu.cn
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
@@ -59,7 +49,7 @@ tags_overview: false
 #   - sort_updated: sort posts by last modification date instead of creation date.
 posts_overview:
   show_all_posts: false
-  post_count: 5
+  post_count: 10
   sort_updated: false
 
 # Customize the archive view.
@@ -79,7 +69,7 @@ post:
 # Customize the copyright years
 # Note: if start_year/end_year not provided, will use current year.
 copyright:
-  start_year: 2016
+  start_year: 2020
   end_year:
 
 # Customize the 404 page
@@ -125,7 +115,7 @@ favicon:
     url: /images/favicon.ico
     gravatar: false
   android:
-    url: /images/favicon-192x192.png
+    url: /images/android-chrome-192x192.png
     gravatar: false
   apple:
     url: /images/apple-touch-icon.png
@@ -138,10 +128,10 @@ favicon:
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
-colorscheme: dark
+colorscheme: white
 
 # Maximal width of the page in rem units.
-page_width: 48
+page_width: 64 # 48
 
 
 ##############################################################################
@@ -163,9 +153,21 @@ open_graph:
 # Plugins
 ##############################################################################
 
+# Valine comment system. https://valine.js.org
+valine:
+  enable: true # if you want use valine, please set this value to true
+  appId: AyDHJHMfyHGtgF5Lc8CG4dpA-gzGzoHsz  # your leancloud appId
+  appKey: JZWLrweBHY4Txn5nZuLwFzim  # your leancloud appKey
+  notify: false # Mail notify
+  verify: false # Verify code
+  avatar: identicon # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+  placeholder: Send a comment for this post! # Comment Box placeholder
+  guest_info: nick,mail,link # Comment header info
+  pageSize: 10 # comment list page size
+
 # Enable MathJax support for Latex
 mathjax:
-  enabled: false
+  enabled: true
 
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus:
@@ -175,7 +177,7 @@ disqus:
 # Fill in your Utterances data to enable Utterances comments
 utterances:
   enabled: false
-  repo: owner/githubrepo
+  repo: SiriusNEO/siriusneo.github.io
   issue_term: pathname
   label: Comment
   theme: github-dark
