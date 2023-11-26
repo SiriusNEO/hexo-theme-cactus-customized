@@ -1,4 +1,8 @@
-# Cactus
+# Cactus - Metric Space
+
+**NOTE: This is a customized version of [the original Cactus Theme](https://github.com/probberechts/hexo-theme-cactus). See [Metric Space](https://me.tric.space/) for a demo of this version.**
+
+
 
 A responsive, clean and simple [Hexo](http://hexo.io) theme for a personal website.
 
