@@ -25,7 +25,7 @@
         <a href="#" aria-label="<%- __('icons.menu') %>"><i class="fa-solid fa-bars fa-2x"></i></a>
       </li>
       <% for (var i in theme.nav) { %><!--
-     --><li><a href="<%- url_for(theme.nav[i]) %>"><span style="font-size: 17px; font-weight: bold;"><%= __('nav.'+i).replace("nav.", "") %></span></a></li><!--
+     --><li><a href="<%- url_for(theme.nav[i]) %>"><%= __('nav.'+i).replace("nav.", "") %></a></li><!--
    --><% } %>
     </ul>
   </div>
